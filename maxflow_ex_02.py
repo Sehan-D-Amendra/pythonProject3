@@ -35,4 +35,8 @@ print("Forward cut set: ", sorted(forwardcut))
 #revers cut
 reverscut = set()
 for u, nbrs in((n, G[n]) for n in non_reachabel) : reverscut.update((u,v) for v in nbrs if v in reachabel)
+
+
 print("Revers cut set: ", sorted(reverscut))
+
+
